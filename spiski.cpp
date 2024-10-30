@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "Node.h" // Предполагается, что ваш класс List объявлен в этом заголовочном файле
+#include "Node.h" 
 
 int main() {
     setlocale(LC_ALL, "ru");
@@ -10,15 +10,15 @@ int main() {
     int n;
     std::cout << "Введите количество элементов для добавления в список: ";
     std::cin >> n;
-    myList.Scan(n); // Метод для ввода n элементов в список
+    myList.Scan(n); 
 
     // Печать списка
     std::cout << "Содержимое списка: ";
-    myList.Print(); // Метод для печати списка
+    myList.Print(); 
 
     // Добавление элементов в список
-    myList.AddToHead(10); // Добавляем элемент в голову
-    myList.AddToTail(20); // Добавляем элемент в хвост
+    myList.AddToHead(10); 
+    myList.AddToTail(20); 
 
     // Печать списка после добавления
     std::cout << "После добавления элементов: ";
@@ -52,7 +52,7 @@ int main() {
     List anotherList;
     std::cout << "Введите количество элементов для второго списка: ";
     std::cin >> n;
-    anotherList.Scan(n); // Ввод второго списка
+    anotherList.Scan(n); 
 
     if (myList == anotherList) {
         std::cout << "Списки равны." << std::endl;
